@@ -1,0 +1,13 @@
+@mixin textColor($normal, $hover: null) {
+    color: $normal;
+    &:hover {
+        color: $hover;
+    }
+}
+
+@mixin backgroundColor($normal, $hover: null) {
+    background-color: $normal;
+    &:hover {
+        background-color: $hover;
+    }
+}

@@ -1,0 +1,20 @@
+@import 'colors';
+@import 'layout';
+@import 'mixins';
+@import 'placeholders';
+@import 'components';
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: SegoeUIWebfont, SegoeUI, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif, "Segoe UI Symbol";
+    font-size: 15px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#app {
+    height: 100%;
+}

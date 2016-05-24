@@ -1,0 +1,24 @@
+%flex-grow {
+    flex: 1 1 0px;
+}
+
+%overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+%avatar {
+    display: inline-block;
+    & img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+%button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 15px;
+    line-height: 23px;
+}

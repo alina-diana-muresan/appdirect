@@ -1,0 +1,111 @@
+.Stream {
+    @extend %flex-grow;
+    display: flex;
+    flex-direction: column;
+    background-color: $grayB;
+    border: 1px solid $grayE;
+    margin: 0 10px;
+    overflow: hidden;
+    max-width: $tabletMinWidth;
+    min-width: $phoneMinWidth;
+    &-Group {
+        height: calc(100% - 50px);
+        padding: 10px 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    &-Header {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        background-color: $grayC;
+        border-bottom: 1px solid $grayD;
+    }
+    &-Content {
+        @extend %flex-grow;
+        overflow: auto;
+    }
+    &-Avatar {
+        @extend %avatar;
+        margin: auto 10px auto 0;
+    }
+    &-User {
+        @extend %flex-grow;
+        overflow: hidden;
+        &-Name {
+            @extend %overflow-ellipsis;
+            @include textColor($focusD, $focusB);
+            display: block;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        &-ScreenName {
+            @extend %overflow-ellipsis;
+            @include textColor($grayG, $grayF);
+            font-size: 13px;
+            display: block;
+        }
+    }
+    &-Item {
+        padding: 10px;
+        margin: 10px;
+        background-color: $grayA;
+        border: 1px solid $grayC;
+        &-Header {
+            color: $grayF;
+            font-size: 13px;
+            padding: 0 0 5px 58px;
+        }
+        &-Body {
+            display: flex;
+            flex-direction: row;
+        }
+        &-Avatar {
+            @extend %avatar;
+            margin-right: 10px;
+        }
+        &-User {
+            @extend %flex-grow;
+        }
+        &-UserData {
+            background-color: $grayB;
+            border: 1px solid $grayC;
+            padding: 1px 3px 0 3px;
+            margin: 0 -4px;
+        }
+        &-Name {
+            @extend %overflow-ellipsis;
+            @include textColor($focusD, $focusB);
+            display: inline-block;
+            margin-right: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        &-ScreenName {
+            @extend %overflow-ellipsis;
+            @include textColor($grayG, $grayF);
+            font-size: 13px;
+            line-height: 21px;
+            display: inline-block;
+        }
+        &-Date {
+            @extend %overflow-ellipsis;
+            @include textColor($grayF, $grayE);
+            font-size: 11px;
+            line-height: 14px;
+            padding-bottom: 2px;
+        }
+        &-Text {
+            a, a:focus, a:visited {
+                color: $focusC;
+                text-decoration: none;
+            }
+            a:hover {
+                color: $focusB;
+            }
+        }
+    }
+}

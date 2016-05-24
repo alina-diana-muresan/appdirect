@@ -1,0 +1,35 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    &-Wrapper {
+        color: $focusA;
+        background-color: $focusD;
+        padding: 5px;
+        min-width: $phoneMinWidth;
+    }
+    &-Text {
+        @extend %flex-grow;
+    }
+    &-Button {
+        @extend %button;
+        @include textColor($focusD, $focusC);
+        @include backgroundColor($focusA, $grayB);
+    }
+    &-Form {
+        @include textColor($focusD);
+        @include backgroundColor($grayB);
+        border: 1px solid $grayC;
+        padding: 5px;
+        margin: 5px 10px;
+        &-Element {
+            margin-bottom: 10px;
+        }
+        &-Button {
+            @extend %button;
+            @include textColor($focusD, $grayB);
+            @include backgroundColor($focusA, $focusC);
+            margin-right: 10px;
+        }
+    }
+}

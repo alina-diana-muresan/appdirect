@@ -1,0 +1,16 @@
+.Input {
+    &-Label {
+        font-size: 14px;
+    }
+    &-Field {
+        @include textColor($grayH);
+        border: 1px solid $grayE;
+        &:hover, &:focus {
+            border: 1px solid $focusB;
+        }
+        outline: none;
+        min-width: 0;
+        width: 100%;
+        padding: 2px 5px;
+    }
+}

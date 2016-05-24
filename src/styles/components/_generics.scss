@@ -1,0 +1,17 @@
+.App {
+    height: 100%;
+}
+.Loader {
+    height: 60px;
+    background: url('../loader.gif') no-repeat center center;
+}
+.Message {
+    padding: 15px 10px;
+    text-align: center;
+    &-Item {
+        @include textColor($focusB);
+    }
+    &-Error {
+        @include textColor($error);
+    }
+}

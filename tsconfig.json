@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "amd",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "ES6"
+    },
+    "filesGlob": [
+        "**/*.tsx",
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings",
+        "lib"
+    ],
+    "files": [
+        "src/app.tsx",
+        "src/components/generic/header.tsx",
+        "src/components/generic/inputElement.tsx",
+        "src/components/generic/loader.tsx",
+        "src/components/generic/message.tsx",
+        "src/components/generic/wrapper.tsx",
+        "src/components/streams/stream.tsx",
+        "src/components/streams/streamGroup.tsx",
+        "src/components/streams/streamHeader.tsx",
+        "src/components/streams/streamItem.tsx",
+        "src/components/constants.ts",
+        "src/config.ts",
+        "src/main.ts",
+        "src/models/streamModel.ts",
+        "src/models/userDataModel.ts",
+        "src/references.d.ts",
+        "src/utils/genericUtils.ts",
+        "src/utils/storageUtils.ts",
+        "src/utils/twitterTextParser.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
